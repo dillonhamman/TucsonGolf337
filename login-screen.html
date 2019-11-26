@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+<meta charset="UTF-8">
+</head>
+<body>
+Username: <input type="text" name="username"><br>
+Password: &nbsp<input type="password" id="passin"><br>
+<input type="checkbox" onclick="myFunction()">Show Password 
+
+<button type="button" onclick="login()">Login</button>
+
+<script>
+function myFunction() {
+	  var x = document.getElementById("passin");
+	  if (x.type === "password") {
+	    x.type = "text";
+	  } else {
+	    x.type = "password";
+	  }
+	}
+function login(){
+	$('login').remove();
+}
+
+</script>
+</body>
+</html>

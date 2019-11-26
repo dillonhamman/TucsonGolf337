@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="golf.css" />
+<meta charset="UTF-8">
+<title>Tucson Golf</title>
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Tucson Golf</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">El Rio Golf Course</a>
+      <a href="#">Silver Bell Golf Course</a>
+    </div>
+  </div> 
+  <div class = "topnav-right">
+  <a href="#search" onclick="loginPage()">Create Account</a>
+  <a href="#search" onclick="loginPage()">Login</a>
+  </div>
+</div>
+
+<div id = 'addFrame'></div>
+
+<script>
+function loginPage(){
+	frame = document.getElementById("addFrame")
+	frame.innerHTML = '<br><br><br><br><iframe id="login" src="login-screen.html" align= "middle" width="250" height="125"></iframe>';
+	
+}
+</script>
+
+</body>
+</html>
